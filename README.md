@@ -126,7 +126,7 @@ Create a load test `Job`
 * `runs` (Number) - Number of times to run through the `sequence`
 * `duration` (Number) - Keep running through the `sequence` for `duration`ms
 * `connections` (Number) - Number of HTTP clients (each will run through the `sequence`)
-* `sequence` (Array[`Request`]) - The sequence of `Request`s to execute (a new cookie jar is created per sequence)
+* `sequence` (Array[`Request`|Array]) - The sequence of `Request`s to execute (a new cookie jar is created per sequence). If an array of sequences is defined in this array, the sequence will be choosen randomly.
 
 ### `Request` Object Properties
 
